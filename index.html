@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniFramework — Vanilla JS UI Framework</title>
+    <meta name="description" content="Virtual DOM, hooks, and SPA routing built from scratch in ~500 lines of pure Vanilla JS." />
+    <!-- Anti-flash: apply saved theme before first paint -->
+    <script>
+      (function () {
+        var t = localStorage.getItem('mini-theme');
+        if (t) document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Bricolage Grotesque (headings) + Inter (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
