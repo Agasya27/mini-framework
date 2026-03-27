@@ -29,7 +29,7 @@ export function Navbar() {
   // hook 1 — theme (read from html attribute so it stays in sync with the
   //           inline anti-flash script on page load)
   const [theme, setTheme] = useState(
-    () => document.documentElement.dataset.theme || 'dark'
+    () => document.documentElement.dataset.theme || 'light'
   );
 
   function go(path) {
